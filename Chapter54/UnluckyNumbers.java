@@ -1,11 +1,6 @@
 import java.util.*;
 
 public class UnluckyNumbers {
-
-    public static boolean testNumber(long num) {
-        long remainder = num / 10;
-        return remainder == 13;
-    }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter number");
@@ -16,5 +11,9 @@ public class UnluckyNumbers {
             status = "evil";
         } 
         System.out.println(number + " is " + status);
+    }
+    public static boolean testNumber(long num) {
+        long remainder = num / 10;
+        return remainder == 13;
     }
 }
