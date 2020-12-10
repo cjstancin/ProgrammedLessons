@@ -1,16 +1,6 @@
 import java.util.Scanner;
 
 public class OdiousNumbers {
-    public static boolean testNumber(long n) {
-        int total = 1;
-        long num = n;
-
-        while (num / 2 != 0) {
-            total += num % 2;
-            num = num / 2;
-        }
-        return n % 2 == 1;
-    }
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
@@ -27,5 +17,15 @@ public class OdiousNumbers {
             System.out.println("Enter a number");
             num = scan.nextLong();
         }
+    }
+    public static boolean testNumber(long n) {
+        int total = 1;
+        long num = n;
+
+        while (num / 2 != 0) {
+            total += num % 2;
+            num = num / 2;
+        }
+        return n % 2 == 1;
     }
 }
