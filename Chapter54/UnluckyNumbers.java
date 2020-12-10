@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class UnluckyNumbers{
+public class UnluckyNumbers {
 
     public static boolean testNumber(long num) {
         long remainder = num / 10;
@@ -9,12 +9,12 @@ public class UnluckyNumbers{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter number");
-        long num = scan.nextLong();
-        String status = "safe";
+        long number = scan.nextLong();
+        String status = "not evil";
 
-        if (testNumber(num)) {
-            status = "unlucky";
+        if (testNumber(number)) {
+            status = "evil";
         } 
-        System.out.println(num + " is " + status);
+        System.out.println(number + " is " + status);
     }
 }
