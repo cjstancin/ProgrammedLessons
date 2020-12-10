@@ -8,14 +8,13 @@ public class PerfectNumbers {
         }
         return sum == n;
     }
-    
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter limit");
         int limit = scan.nextInt();
-        for (int j = 0; j < limit; j++){
-            if (isPerfect(j)){
-                System.out.println(j);
+        for (int x = 0; x < limit; x++){
+            if (isPerfect(x)){
+                System.out.println(x);
             }
         }
     }
